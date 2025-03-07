@@ -1,0 +1,178 @@
+/* Classification specific styles */
+.classification-container {
+    width: 100%;
+    max-width: 900px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+    padding: 20px;
+}
+
+.subtitle {
+    color: #aaaaaa;
+    margin-top: -20px;
+    font-size: 1rem;
+}
+
+.criteria-container {
+    width: 100%;
+    background-color: #2a2a2a;
+    border-radius: 12px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.criteria {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin-top: 15px;
+}
+
+.criterion {
+    padding: 15px;
+    background-color: #333333;
+    border-radius: 8px;
+    border-left: 3px solid #4a7dff;
+}
+
+.criterion h3 {
+    color: #ffffff;
+    font-size: 1.1rem;
+    margin-bottom: 8px;
+}
+
+.criterion p {
+    color: #cccccc;
+    font-size: 0.9rem;
+}
+
+.document-input {
+    width: 100%;
+    background-color: #2a2a2a;
+    border-radius: 12px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+#document-text {
+    width: 100%;
+    height: 200px;
+    background-color: #333333;
+    border: 1px solid #444444;
+    border-radius: 8px;
+    padding: 15px;
+    color: #ffffff;
+    font-size: 1rem;
+    resize: vertical;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.classify-btn {
+    background-color: #4a7dff;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    padding: 12px 20px;
+    font-size: 1rem;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    transition: background-color 0.2s;
+}
+
+.classify-btn:hover {
+    background-color: #3a6ae6;
+}
+
+.classification-result {
+    width: 100%;
+    background-color: #2a2a2a;
+    border-radius: 12px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.result-content {
+    margin-top: 15px;
+    padding: 15px;
+    background-color: #333333;
+    border-radius: 8px;
+    min-height: 100px;
+}
+
+.result-requires-both {
+    border-left: 4px solid #4CAF50;
+}
+
+.result-requires-archiving {
+    border-left: 4px solid #FFC107;
+}
+
+.result-not-required {
+    border-left: 4px solid #F44336;
+}
+
+.result-title {
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.result-explanation {
+    margin-top: 15px;
+    font-size: 0.9rem;
+    color: #cccccc;
+}
+
+.criteria-summary {
+    margin-top: 15px;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.criteria-item {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.criteria-icon {
+    font-size: 1rem;
+}
+
+.criteria-icon.yes {
+    color: #4CAF50;
+}
+
+.criteria-icon.no {
+    color: #F44336;
+}
+
+.criteria-text {
+    font-size: 0.9rem;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .classification-container {
+        padding: 10px;
+    }
+    
+    .criterion {
+        padding: 10px;
+    }
+    
+    .criterion h3 {
+        font-size: 1rem;
+    }
+    
+    .criterion p {
+        font-size: 0.8rem;
+    }
+} 

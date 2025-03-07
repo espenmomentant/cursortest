@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document Classification System</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="classify-styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <div class="classification-container">
+        <h1>Document Classification System</h1>
+        <p class="subtitle">Based on Arkivverket guidelines for public sector</p>
+        
+        <div class="criteria-container">
+            <h2>Classification Criteria</h2>
+            <div class="criteria">
+                <div class="criterion">
+                    <h3>1. Is it a 'saksdokument' (case document)?</h3>
+                    <p>Does it pertain to a specific case or matter handled by the organization?</p>
+                </div>
+                <div class="criterion">
+                    <h3>2. Has it been sent to or received by the organization?</h3>
+                    <p>Is it an incoming or outgoing correspondence relevant to the organization's operations?</p>
+                </div>
+                <div class="criterion">
+                    <h3>3. Is it subject to processing and holds value as documentation?</h3>
+                    <p>Will it be used in decision-making processes or serve as evidence of the organization's activities?</p>
+                </div>
+            </div>
+        </div>
+        
+        <div class="document-input">
+            <h2>Document to be Classified</h2>
+            <textarea id="document-text" placeholder="Paste or type the document text here..."></textarea>
+            <button id="classify-btn" class="classify-btn">
+                <i class="fas fa-file-alt"></i> Classify Document
+            </button>
+        </div>
+        
+        <div class="classification-result" id="classification-result">
+            <h2>Classification Result</h2>
+            <div class="result-content" id="result-content">
+                <p>Submit a document to see the classification result.</p>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="classify.js"></script>
+</body>
+</html> 

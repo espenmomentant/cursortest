@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chat Interface</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <div class="chat-container">
+        <h1>What can I help with?</h1>
+        
+        <div class="nav-links">
+            <a href="classify.html" class="nav-link">
+                <i class="fas fa-file-alt"></i> Document Classification
+            </a>
+        </div>
+        
+        <!-- Chat history section -->
+        <div id="chat-history" class="chat-history"></div>
+        
+        <div class="input-container">
+            <input type="text" id="chat-input" placeholder="Ask anything">
+            
+            <div class="action-buttons">
+                <button class="action-btn">
+                    <i class="fas fa-plus"></i> Attach
+                </button>
+                <button class="action-btn">
+                    <i class="fas fa-search"></i> Search
+                </button>
+                <button class="action-btn">
+                    <i class="fas fa-lightbulb"></i> Reason
+                </button>
+                <button class="action-btn voice-btn">
+                    <i class="fas fa-microphone"></i> Voice
+                </button>
+            </div>
+        </div>
+        
+        <div class="suggestion-buttons">
+            <button class="suggestion-btn">
+                <i class="fas fa-gift"></i> Surprise me
+            </button>
+            <button class="suggestion-btn">
+                <i class="fas fa-file-alt"></i> Summarize text
+            </button>
+            <button class="suggestion-btn">
+                <i class="fas fa-chart-bar"></i> Analyze data
+            </button>
+            <button class="suggestion-btn">
+                <i class="fas fa-code"></i> Code
+            </button>
+            <button class="suggestion-btn">
+                <i class="fas fa-pen"></i> Help me write
+            </button>
+            <button class="suggestion-btn">
+                More
+            </button>
+        </div>
+    </div>
+
+    <!-- Add OpenAI API script -->
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html> 
